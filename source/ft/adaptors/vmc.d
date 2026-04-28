@@ -151,6 +151,11 @@ public:
                         break;
                         case "/Key":
                         {
+                            if (msg.addressPattern.length>3) {
+                                if (msg.typeTags==6) {
+                                    this.keyboardVals[msg.arg!string(1)] = msg.arg!(int(0));
+                                }
+                            }
                             break;
                         }
                     default: break;

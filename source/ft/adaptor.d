@@ -6,7 +6,7 @@ protected:
     float[string] blendshapes;
     Bone[string] bones;
     string[string] options;
-
+    int[string] keyboardVals;
     int dataLossCounter;
     enum RECV_TIMEOUT = 16;
 
@@ -40,4 +40,7 @@ public:
 
     final
     ref Bone[string] getBones() { return bones; }
+
+    final 
+    ref float[string] getKeyboardVals() {return keyboardVals;}s
 }
